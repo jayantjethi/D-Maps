@@ -1,4 +1,47 @@
 #map{
     height: 700px;
     width: 100%;
+    margin-top: 50px;
+}
+#submit1{
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: black;
+    background: blanchedalmond;
+  /* background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
+  background-image: -moz-linear-gradient(top, #5282d4, #28667d);
+  background-image: -ms-linear-gradient(top, #5282d4, #28667d);
+  background-image: -o-linear-gradient(top, #5282d4, #28667d);
+  background-image: linear-gradient(to bottom, #5282d4, #28667d); */
+    cursor: pointer;
+    position: absolute;
+    z-index: 0;
+    border-radius: 18px;
+    top: 80px;
+    left: 670px;
+    font-family: Quickstand;
+    font-size: large;
+    font-weight: 700;
+    margin-top: 10px;
+}
+#uppr{
+    margin-top: 30px;
+    margin-left: 220px;
+    width: 100%;
+    
+}
+#to{
+    margin-left: 260px;
+}
+#Places{
+    height: 50px;
+    width: 320px;
+    border-radius: 15px;
+    color: black;
+    background-color: #cccccc ;
+    outline: none;
+    box-shadow: 2px 5px black;
+    text-shadow: 1px 0px #FF0000;
 }
