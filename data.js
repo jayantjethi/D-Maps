@@ -4,7 +4,7 @@ var data = {
                     "type": "Feature",
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [28.7501922,
+                        "coordinates": [28.75019223,
                             77.1171972
                         ]
                     },
@@ -14,7 +14,7 @@ var data = {
                     "type": "Feature",
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [28.7498520,
+                        "coordinates": [28.74985203,
                             77.1176061
                         ]
                     },
@@ -24,7 +24,7 @@ var data = {
                     "type": "Feature",
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [28.7502522,
+                        "coordinates": [28.75025227,
                             77.1164258
                         ]
                     },
@@ -34,7 +34,7 @@ var data = {
                     "type": "Feature",
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [28.7512523,
+                        "coordinates": [28.75125232,
                             77.1166547
                         ]
                     },
@@ -44,8 +44,8 @@ var data = {
                     "type": "Feature",
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [-84.44467709457501,
-                            33.640488947235355
+                        "coordinates": [28.75985203,
+                            77.11850
                         ]
                     },
                     "properties": {}
@@ -54,8 +54,8 @@ var data = {
                     "type": "Feature",
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [-84.44375441467389,
-                            33.640488947235355
+                        "coordinates": [28.78985201,
+                            77.1376061
                         ]
                     },
                     "properties": {}
@@ -64,8 +64,8 @@ var data = {
                     "type": "Feature",
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [-84.4443337718211,
-                            33.640640792420044
+                        "coordinates": [28.74546508,
+                            77.16466061
                         ]
                     },
                     "properties": {}
@@ -74,8 +74,8 @@ var data = {
                     "type": "Feature",
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [-84.44433645403012,
-                            33.64116778245426
+                        "coordinates": [28.7676520,
+                            77.1177061
                         ]
                     },
                     "properties": {}
@@ -84,8 +84,8 @@ var data = {
                     "type": "Feature",
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [-84.44467709457501,
-                            33.64117894746248
+                        "coordinates": [28.7621030,
+                            77.11812301
                         ]
                     },
                     "properties": {}

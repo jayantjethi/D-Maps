@@ -2,7 +2,8 @@
 <html>
 
 <head>
-
+    
+    <!-- <base href="/binding/"> -->
     <title>D-Maps</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +12,7 @@
     type="logo/jpg">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="../Jquery/jquery.multiselect.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="data.js"></script>
@@ -512,7 +514,7 @@ title: "Hello World!",
                 strokeWeight: 2
             });
             Path.setMap(map);
-
+             var line;
             // This section is related to the routing from entry to exit
 
             var submit_button = document.getElementById('getRoute');
@@ -523,12 +525,12 @@ title: "Hello World!",
                 for (var i = 0; i < path_temp.length; ++i) {
                     debugger
                     var latLng_temp = new google.maps.LatLng(path_temp[i].lat, path_temp[i].lng);
-                    var line = Path.getPath();
+                     line = Path.getPath();
                     line.push(latLng_temp);
                 }
             });
             debugger
-            console(line.getPath());
+            // console(line.getPath());
         }
 
         function downloadUrl(url, callback) {
@@ -544,7 +546,7 @@ title: "Hello World!",
             // };
 
             request.open('GET', url, true);
-            request.send(null);
+            // request.send(null);
         }
 
         function doNothing() { }
