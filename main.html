@@ -18,9 +18,10 @@
 
 <body>
 
-    <div id="uppr">
-        <label for="From" >From:</label>
-        <select name="Places" id="Places">
+    <div id="uppr" class="container" class="row">
+      <div    class=" col-md-6 ">
+        <label for="From" >From:
+        <select name="Places" id="Places" class="elemnum">
             <option value="" disabled selected hidden>Enter Your Current Location...</option>
           <option value="TnP">TnP</option>
           <option value="OAT">OAT</option>
@@ -47,9 +48,12 @@
           <option value="EE Department">EE Department</option>
           <option value="Civil Department">Civil Department</option>
         </select>
+        </label>
+      </div>
+        <div    class="col-md-6">
         <span id="to">
-         <label for="To" >To</label>
-        <select name="Places" id="Places">
+         <label for="To" >To
+        <select name="Places" id="Places" class="elemnum">
         <option value="" disabled selected hidden>Enter Your Destination...</option>
          <option value="TnP">TnP</option>
           <option value="OAT">OAT</option>
@@ -76,13 +80,19 @@
           <option value="EE Department">EE Department</option>
           <option value="Civil Department">Civil Department</option>
         </select>
+        </label>
     </span>
+    </div>
+    
          <br>
           <br>
-        <input id = "submit1" type="submit" value="Submit">
+          <div class="row" >
+        <input id = "submit1"  class="d-flex justify-content-center" type="submit" value="Submit" >
+      </div>
       </form>
-    </div>
+    
     <div id="map"></div>
+    </div>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO7_gerSNEefHH1ORHxeAc77D31C6PtsI&callback=initMap"
   ></script>
   <script src="mains.js"></script>

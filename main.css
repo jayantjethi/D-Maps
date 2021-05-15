@@ -1,7 +1,7 @@
 #map{
     height: 700px;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 #submit1{
     width: 150px;
@@ -15,9 +15,14 @@
   background-image: -ms-linear-gradient(top, #5282d4, #28667d);
   background-image: -o-linear-gradient(top, #5282d4, #28667d);
   background-image: linear-gradient(to bottom, #5282d4, #28667d); */
-    cursor: pointer;
-    position: absolute;
-    z-index: 0;
+   /* cursor: pointer;*/
+   /* position: absolute;*/
+    /*z-index: 0;*/
+     margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
     border-radius: 18px;
     top: 80px;
     left: 670px;
@@ -25,15 +30,26 @@
     font-size: large;
     font-weight: 700;
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+.elemnnum{
+
+    position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+   
 }
 #uppr{
     margin-top: 30px;
-    margin-left: 220px;
+   /* margin-left: 220px;
+    margin-right: 200px;*/
     width: 100%;
     
 }
 #to{
     margin-left: 260px;
+    margin-right: 260px;
 }
 #Places{
     height: 50px;
