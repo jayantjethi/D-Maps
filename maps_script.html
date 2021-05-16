@@ -11,6 +11,7 @@
     href=".\Images\logo.jpg"
     type="logo/jpg">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="../Jquery/jquery.multiselect.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,6 +19,8 @@
     <script src="data.js"></script>
     <script src="graph.js"></script>
     <script src="routing.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
 </head>
 
 <body>
@@ -95,6 +98,78 @@
 
     <div id="map"></div>
     <br>
+
+    <footer class="ftco-footer ftco-section" style="font-family: 'Quicksand';">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">Traveller</h2>
+                <p>
+                    Woried Of Walking Across The Giant Campus or
+                    Struck between the two paths and can't decide which is more shorter or
+                    Wanna Explore More DTU, You have Come to the Right Place This is the complete Guide for all Your Journeys.</p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4 ml-md-4" style="padding-left:100px ">
+                <h2 class="ftco-heading-2">Connect With Our Team via</h2>
+                <ul class="list-unstyled">
+                  <li style="font-size: 17px; color: whitesmoke; font-weight: 500;"><a href="https://www.linkedin.com/in/jayant-jethi-492312197/"><span class="icon-long-arrow-right mr-2"></span><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:20px;color: white;"></i>- Jayant Jethi</a></li>
+                  <br>
+                  <li style="font-size: 17px; color: whitesmoke; font-weight: 500;"><a href="https://www.linkedin.com/in/himanshu-jindal-199332a0/"><span class="icon-long-arrow-right mr-2"></span><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:20px;color: white;"></i>- Himanshu Jindal</a></li>
+                  <br>
+                  <li style="font-size: 17px; color: whitesmoke; font-weight: 500;"><a href="https://www.linkedin.com/in/jayant-prakash-21b595192"><span class="icon-long-arrow-right mr-2"></span><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:20px;color: white;"></i>- Jayant Prakash</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-3">Query?</h2>
+                <div class="block-23 mb-3">
+                  <ul>
+                    <!-- <li><span class="icon icon-map-marker"></span><span class="text">
+                                        </span></li> -->
+                    <li><a href="https://www.truecaller.com"><span class="icon icon-phone"></span><span class="text"><i class="fa fa-phone"
+                            aria-hidden="true"></i> 8076331262 <br><i class="fa fa-phone" aria-hidden="true"></i>9068880466
+                          <br><i class="fa fa-phone" aria-hidden="true"></i> 9756201934</span></a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><span class="icon icon-envelope">
+                          </i></span><span class="text"><i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                          jayant.jethi8@gmail.com</span></a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><span
+                          class="icon icon-envelope"></span><span class="text"><i class="fa fa-envelope-open-o"
+                            aria-hidden="true"></i>
+                          jindalh2@gmail.com</span></a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><span
+                          class="icon icon-envelope"></span><span class="text"><i class="fa fa-envelope-open-o"
+                            aria-hidden="true"></i>
+                          jayant21prakash@gmail.com</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="posn">This website has been designed & developed with &#10084;</p>
+    
+          <!-- <p class="aligncenter">
+                <img src="images/banner.png" alt="developers" />
+            </p> -->
+          <div class="row">
+            <div class="col-md-12 text-center">
+    
+              <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights reserved
+                <!-- This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+      </footer>
+
+
+
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO7_gerSNEefHH1ORHxeAc77D31C6PtsI&libraries=drawing&callback=initMap">
         </script>
@@ -200,93 +275,6 @@
         scale: 2,
         anchor: new google.maps.Point(11, 25),
       };
-    //   const tnplib = [
-    //     {lat : 28.7501922 , lng: 77.1171972},
-    //     {lat : 28.7506316 , lng: 77.1165213}
-        
-    //     // { lat: -27.467, lng: 153.027 },
-    //   ];
-    //   const tnplibPath = new google.maps.Polyline({
-    //     path: tnplib,
-    //     geodesic: true,
-    //     strokeColor: "#FF0000",
-    //     strokeOpacity: 1.0,
-    //     strokeWeight: 2,
-    //   });
-    //   const tnpoat = [
-    //     {lat : 28.7501922 , lng: 77.1171972},
-    //     {lat : 28.7506316 , lng: 77.1165213}
-        
-    //     // { lat: -27.467, lng: 153.027 },
-    //   ];
-    //   const tnpoatPath = new google.maps.Polyline({
-    //     path: tnpoat,
-    //     geodesic: true,
-    //     strokeColor: "#FF0000",
-    //     strokeOpacity: 1.0,
-    //     strokeWeight: 2,
-    //   });
-    //   const tnpbraudi = [
-    //     {lat : 28.7501922 , lng: 77.1171972},
-    //     {lat : 28.7506316 , lng: 77.1165213}
-        
-    //     // { lat: -27.467, lng: 153.027 },
-    //   ];
-    //   const tnpaudiPath = new google.maps.Polyline({
-    //     path: tnpbraudi,
-    //     geodesic: true,
-    //     strokeColor: "#FF0000",
-    //     strokeOpacity: 1.0,
-    //     strokeWeight: 2,
-    //   });
-    //   const tnpmic = [
-    //     {lat : 28.7501922 , lng: 77.1171972},
-    //     {lat : 28.7506316 , lng: 77.1165213}
-        
-    //     // { lat: -27.467, lng: 153.027 },
-    //   ];
-    //   const tnpmicPath = new google.maps.Polyline({
-    //     path: tnpmic,
-    //     geodesic: true,
-    //     strokeColor: "#FF0000",
-    //     strokeOpacity: 1.0,
-    //     strokeWeight: 2,
-    //   });
-    //   const micsps18 = [
-    //     {lat : 28.7501922 , lng: 77.1171972},
-    //     {lat : 28.7506316 , lng: 77.1165213}
-        
-    //     // { lat: -27.467, lng: 153.027 },
-    //   ];
-    //   const micsps18Path = new google.maps.Polyline({
-    //     path: micsps18,
-    //     geodesic: true,
-    //     strokeColor: "#FF0000",
-    //     strokeOpacity: 1.0,
-    //     strokeWeight: 2,
-    //   });
-    //   const micmaths = [
-    //     {lat : 28.7501922 , lng: 77.1171972},
-    //     {lat : 28.7506316 , lng: 77.1165213}
-        
-    //     // { lat: -27.467, lng: 153.027 },
-    //   ];
-    //   const micmathsPath = new google.maps.Polyline({
-    //     path: micmaths,
-    //     geodesic: true,
-    //     strokeColor: "#FF0000",
-    //     strokeOpacity: 1.0,
-    //     strokeWeight: 2,
-    //   });
-    //   tnplibPath.setMap(map);
-    //   micsps18Path.setMap(map);
-    //   tnpmicPath.setMap(map);
-    //   tnpaudiPath.setMap(map);
-    //   tnpoatPath.setMap(map);
-    //   tnplibPath.setMap(map);
-
-    
-    // marker.setMap(null);
     new google.maps.Marker({
     position: tnp,
     icon: svgMarker,
@@ -297,7 +285,6 @@ new google.maps.Marker({
     position: oat,
     icon: svgMarker,
 map,
-// icon : 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
 title: "Hello World!",
 });
 new google.maps.Marker({
@@ -506,7 +493,7 @@ title: "Hello World!",
             /*---------------------------------------------------------------------------------------------*/
 
             Path = new google.maps.Polyline({
-                geodesic: true,
+                // geodesic: true,
                 strokeColor: 'blue',
                 strokeOpacity: 1.0,
                 strokeWeight: 2

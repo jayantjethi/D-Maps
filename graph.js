@@ -122,7 +122,7 @@ function connector(){
          '15': weight(data.features[17].geometry["coordinates"], data.features[15].geometry["coordinates"]),
           '16': weight(data.features[17].geometry["coordinates"], data.features[16].geometry["coordinates"]),
          '23': weight(data.features[17].geometry["coordinates"], data.features[23].geometry["coordinates"]),
-         '7': weight(data.features[17].geometry["coordinates"], data.features[7].geometry["coordinates"])
+         '7': weight(data.features[17].geometry["coordinates"], data.features[7].geometry["coordinates"]),
     });
     graph.addVertex('18', {
         '19': weight(data.features[18].geometry["coordinates"], data.features[19].geometry["coordinates"]),
