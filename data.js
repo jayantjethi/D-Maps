@@ -90,6 +90,16 @@ var data = {
                     },
                     "properties": {}
                 },
+                 {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [ 77.1173276,
+                           28.7503122
+                        ]
+                    },
+                    "properties": {}
+                },
                 {
                     "type": "Feature",
                     "geometry": {
@@ -104,8 +114,8 @@ var data = {
                     "type": "Feature",
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [77.1179962,
-                           28.7414645
+                        "coordinates": [77.11799594872775,
+                           28.751480297771664
                         ]
                     },
                     "properties": {}
