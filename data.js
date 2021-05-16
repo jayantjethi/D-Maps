@@ -4,8 +4,8 @@ var data = {
                     "type": "Feature",
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [28.75019223,
-                            77.1171972
+                        "coordinates": [77.1171972,
+                            28.75019223
                         ]
                     },
                     "properties": {}
@@ -14,8 +14,8 @@ var data = {
                     "type": "Feature",
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [28.74985203,
-                            77.1176061
+                        "coordinates": [77.1176061,
+                            28.74985203
                         ]
                     },
                     "properties": {}
@@ -24,8 +24,8 @@ var data = {
                     "type": "Feature",
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [28.75025227,
-                            77.1164258
+                        "coordinates": [77.1164258,
+                            28.75025227
                         ]
                     },
                     "properties": {}
@@ -34,8 +34,8 @@ var data = {
                     "type": "Feature",
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [28.75125232,
-                            77.1166547
+                        "coordinates": [77.1166547,
+                            28.75125232 
                         ]
                     },
                     "properties": {}
@@ -44,8 +44,8 @@ var data = {
                     "type": "Feature",
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [28.75985203,
-                            77.11850
+                        "coordinates": [77.11850,
+                            28.75985203
                         ]
                     },
                     "properties": {}

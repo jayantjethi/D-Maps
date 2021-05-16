@@ -5,7 +5,11 @@ function connector(){
         '3': weight(data.features[0].geometry["coordinates"], data.features[3].geometry["coordinates"])
     });
     graph.addVertex('1', {
-        '4': weight(data.features[1].geometry["coordinates"], data.features[4].geometry["coordinates"])
+        '4': weight(data.features[1].geometry["coordinates"], data.features[4].geometry["coordinates"]),
+        '3': weight(data.features[1].geometry["coordinates"], data.features[3].geometry["coordinates"]),
+        '2': weight(data.features[1].geometry["coordinates"], data.features[2].geometry["coordinates"]),
+        '0': weight(data.features[1].geometry["coordinates"], data.features[0].geometry["coordinates"])
+
     });
     graph.addVertex('2', {
         '5': weight(data.features[2].geometry["coordinates"], data.features[5].geometry["coordinates"])

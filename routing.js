@@ -4,12 +4,14 @@ var x_path = [];
 
 function route_setup(){
     
-    var end_point = parseInt(document.getElementById("end_point").value);
+    var end_point = parseInt(document.getElementById("Places1").value);
+    var st_point = parseInt(document.getElementById("Places").value);
+    
     
     
     connector();
     console.log("crossed conn"); 
-    var out = djikstra(graph, '0');
+    var out = djikstra(graph,parseInt(document.getElementById("Places").value));
     console.log("crossed djikstra");
     for (i = 0; i < data.features.length; i++) {
         for (j = 0; j < out.shortestPaths[end_point].length; j++) {

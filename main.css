@@ -3,7 +3,7 @@
     width: 100%;
     margin-top: 80px;
 }
-#submit1{
+#getRoute{
     width: 150px;
     height: 40px;
     border: none;
@@ -24,8 +24,8 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
     border-radius: 18px;
-    top: 80px;
-    left: 670px;
+    top: 110px;
+    left: 470px;
     font-family: Quickstand;
     font-size: large;
     font-weight: 700;
@@ -52,6 +52,16 @@
     margin-right: 260px;
 }
 #Places{
+    height: 50px;
+    width: 320px;
+    border-radius: 15px;
+    color: black;
+    background-color: #cccccc ;
+    outline: none;
+    box-shadow: 2px 5px black;
+    text-shadow: 1px 0px #FF0000;
+}
+#Places1{
     height: 50px;
     width: 320px;
     border-radius: 15px;

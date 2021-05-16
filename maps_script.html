@@ -22,20 +22,20 @@
 
 <body>
 
-    <br>
+    <!-- <br>
     <input type="text" id="end_point">
     <button id="getRoute">submit</button> 
-    <br>
+    <br> -->
     
     <div id="uppr">
         <label for="From" >From:</label>
         <select name="Places" id="Places">
             <option value="" disabled selected hidden>Enter Your Current Location...</option>
-          <option value="TnP">TnP</option>
-          <option value="OAT">OAT</option>
-          <option value="BR Audi">BR Audi</option>
-          <option value="Mic Mac">Mic Mac</option>
-          <option value="Library">Library</option>
+          <option value="0">TnP</option>
+          <option value="1">OAT</option>
+          <option value="2">BR Audi</option>
+          <option value="3">Mic Mac</option>
+          <option value="4">Library</option>
           <option value="Academic Section">Academic Section</option>
           <option value="Administration Block">Administration Block</option>
           <option value="Nescafe">Nescafe</option>
@@ -59,13 +59,13 @@
         </select>
         <span id="to">
          <label for="To" >To</label>
-        <select name="Places" id="Places">
+        <select name="Places" id="Places1">
         <option value="" disabled selected hidden>Enter Your Destination...</option>
-         <option value="TnP">TnP</option>
-          <option value="OAT">OAT</option>
-          <option value="BR Audi">BR Audi</option>
-          <option value="Mic Mac">Mic Mac</option>
-          <option value="Library">Library</option>
+         <option value="0">TnP</option>
+          <option value="1">OAT</option>
+          <option value="2">BR Audi</option>
+          <option value="3">Mic Mac</option>
+          <option value="4">Library</option>
           <option value="Academic Section">Academic Section</option>
           <option value="Administration Block">Administration Block</option>
           <option value="Nescafe">Nescafe</option>
@@ -89,7 +89,7 @@
     </span>
          <br>
           <br>
-        <input id = "submit1" type="submit" value="Submit">
+        <input id = "getRoute" type="submit" value="Submit">
       </form>
     </div>
 
@@ -509,7 +509,7 @@ title: "Hello World!",
 
             Path = new google.maps.Polyline({
                 geodesic: true,
-                strokeColor: '#FF0000',
+                strokeColor: 'blue',
                 strokeOpacity: 1.0,
                 strokeWeight: 2
             });
@@ -523,13 +523,11 @@ title: "Hello World!",
                 path_temp = route_setup();
                 console.log(path_temp);
                 for (var i = 0; i < path_temp.length; ++i) {
-                    debugger
                     var latLng_temp = new google.maps.LatLng(path_temp[i].lat, path_temp[i].lng);
                      line = Path.getPath();
                     line.push(latLng_temp);
                 }
             });
-            debugger
             // console(line.getPath());
         }
 
