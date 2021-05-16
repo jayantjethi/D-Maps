@@ -5,7 +5,7 @@ function connector(){
         '7': weight(data.features[0].geometry["coordinates"], data.features[7].geometry["coordinates"]),
         '8': weight(data.features[0].geometry["coordinates"], data.features[8].geometry["coordinates"])
     });
-    graph.addVertex('1');
+    graph.addVertex('1')
     graph.addVertex('2', {
         '4': weight(data.features[2].geometry["coordinates"], data.features[4].geometry["coordinates"]),
         '5': weight(data.features[2].geometry["coordinates"], data.features[5].geometry["coordinates"])
@@ -93,3 +93,4 @@ function connector(){
     graph.addVertex('23', {
         '1': weight(data.features[23].geometry["coordinates"], data.features[1].geometry["coordinates"])
     });
+}
