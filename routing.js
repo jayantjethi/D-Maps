@@ -30,23 +30,23 @@ function route_setup(){
     connector();
     console.log("crossed conn"); 
     var out = djikstra(graph,parseInt(document.getElementById("Places").value));
-    console.log("crossed djikstra");
-    for (i = 0; i < data.features.length; i++) {
+    console.log(out);
+
         for (j = 0; j < out.shortestPaths[end_point].length; j++) {
-            if (String(i) == out.shortestPaths[end_point][j]) {
-                var x_i = i;
+         
+                var x_i = out.shortestPaths[end_point][j];
                 x_path.push({
                     lat: data.features[x_i].geometry.coordinates[1],
                     lng: data.features[x_i].geometry.coordinates[0]
                 });
-            }
-        }
+            
+        
     }
-    x_path.push({
-        lat: data.features[end_point].geometry.coordinates[1],
-        lng: data.features[end_point].geometry.coordinates[0]
-    });
-
+    // x_path.push({
+    //     lat: data.features[end_point].geometry.coordinates[1],
+    //     lng: data.features[end_point].geometry.coordinates[0]
+    // });
+    console.log(x_path);
     return x_path;
 }
 
@@ -100,6 +100,7 @@ function findSmallest(dist, q) {
     var minNode;
 
     for (var node in q) {
+        
         if (dist[node] <= min) {
             min = dist[node];
             minNode = node;
