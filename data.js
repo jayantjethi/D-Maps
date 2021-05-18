@@ -1,5 +1,5 @@
 var data = {
-            "type": "FeatureCollection",
+            "type": "Feature",
             "features": [{
                     "type": "Feature",
                     "geometry": {

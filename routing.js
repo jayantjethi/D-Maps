@@ -4,6 +4,24 @@ var x_path = [];
 
 function route_setup(){
     
+//     var existing = localStorage.getItem(end_point);
+
+// // If no existing data, use the value by itself
+// // Otherwise, add the new value to it
+// var data = existing ? existing + end_point :  null;
+
+// // Save back to localStorage
+// localStorage.setItem(end_point, data);
+
+// var existing = localStorage.getItem(st_point);
+
+// // If no existing data, use the value by itself
+// // Otherwise, add the new value to it
+// var data = existing ? existing + st_point :  null;
+
+// // Save back to localStorage
+// localStorage.setItem(st_point, data);
+
     var end_point = parseInt(document.getElementById("Places1").value);
     var st_point = parseInt(document.getElementById("Places").value);
     
