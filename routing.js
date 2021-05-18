@@ -1,10 +1,11 @@
 var graph = new DirectedGraph(); //Required by connector
 var INFINITY = 1 / 0;
 var x_path = [];
+var path = [];
 
 function route_setup(){
-    
-//     var existing = localStorage.getItem(end_point);
+
+    // var existing = localStorage.getItem(end_point);
 
 // // If no existing data, use the value by itself
 // // Otherwise, add the new value to it
@@ -21,6 +22,8 @@ function route_setup(){
 
 // // Save back to localStorage
 // localStorage.setItem(st_point, data);
+   
+x_path = [];
 
     var end_point = parseInt(document.getElementById("Places1").value);
     var st_point = parseInt(document.getElementById("Places").value);
@@ -28,10 +31,12 @@ function route_setup(){
     
     
     connector();
+    
     console.log("crossed conn"); 
     var out = djikstra(graph,parseInt(document.getElementById("Places").value));
     console.log(out);
-
+       var distance1 = Math.round(out.shortestDistances[end_point]*1000);
+       console.log(distance);
         for (j = 0; j < out.shortestPaths[end_point].length; j++) {
          
                 var x_i = out.shortestPaths[end_point][j];
@@ -47,7 +52,10 @@ function route_setup(){
     //     lng: data.features[end_point].geometry.coordinates[0]
     // });
     console.log(x_path);
+    var dist = document.getElementById("distance");
+    dist.innerHTML = distance1 + ' Metres';
     return x_path;
+    
 }
 
 function DirectedGraph() {
@@ -113,7 +121,7 @@ function findSmallest(dist, q) {
 
 function getShortestPaths(previous, shortestPaths, startVertex, dist) {
     for (var node in shortestPaths) {
-        var path = shortestPaths[node];
+         path = shortestPaths[node];
 
         while (previous[node]) {
             path.push(node);

@@ -2,8 +2,6 @@
 <html>
 
 <head>
-    
-    <!-- <base href="/binding/"> -->
     <title>D-Maps</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,18 +16,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="data.js"></script>
     <script src="graph.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand'>
     <script src="routing.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
 </head>
 
 <body>
-
-    <!-- <br>
-    <input type="text" id="end_point">
-    <button id="getRoute">submit</button> 
-    <br> -->
-    
     <div id="uppr">
         <label for="From" >From:</label>
         <select name="Places" id="Places">
@@ -90,15 +83,15 @@
     </span>
          <br>
           <br>
-        <a href="#map"><input id = "getRoute" type="submit" value="Submit"></a>
-      </form>
+      <a href="#map"><input id = "getRoute" type="submit" value="Submit" ></a>
+      <button onclick="window.location.reload()" id="getRoute1">Clear</button>
     </div>
 
 
 
     <div id="map"></div>
     <br>
-
+     <h1 id="dist"><i class="fa fa-map-marker" aria-hidden="true"></i> Distance =>  <span id="distance"></span></h1>
     <footer class="ftco-footer ftco-section" style="font-family: 'Quicksand';">
         <div class="container">
           <div class="row mb-5">
@@ -108,7 +101,7 @@
                 <p>
                     Woried Of Walking Across The Giant Campus or
                     Struck between the two paths and can't decide which is more shorter or
-                    Wanna Explore More DTU, You have Come to the Right Place This is the complete Guide for all Your Journeys.</p>
+                    Wanna Explore More Your Campus, You have Come to the Right Place.This is the complete Guide for all Your Journeys.</p>
               </div>
             </div>
             <div class="col-md">
@@ -275,6 +268,16 @@
         scale: 2,
         anchor: new google.maps.Point(11, 25),
       };
+      const svgMarker7 = {
+        path:
+          "M10.453 14.016l6.563-6.609-1.406-1.406-5.156 5.203-2.063-2.109-1.406 1.406zM12 2.016q2.906 0 4.945 2.039t2.039 4.945q0 1.453-0.727 3.328t-1.758 3.516-2.039 3.070-1.711 2.273l-0.75 0.797q-0.281-0.328-0.75-0.867t-1.688-2.156-2.133-3.141-1.664-3.445-0.75-3.375q0-2.906 2.039-4.945t4.945-2.039z",
+        fillColor: "red",
+        fillOpacity: 2.0,
+        strokeWeight: 1.0,
+        rotation: 0,
+        scale: 2,
+        anchor: new google.maps.Point(7, 18),
+      };
     new google.maps.Marker({
     position: tnp,
     icon: svgMarker,
@@ -346,7 +349,7 @@ title: "Hello World!",
 });
 new google.maps.Marker({
     position: appliedchem,
-    icon: svgMarker,
+    icon: svgMarker7,
 
 map,
 title: "Hello World!",
@@ -505,6 +508,7 @@ title: "Hello World!",
             var submit_button = document.getElementById('getRoute');
 
             google.maps.event.addDomListener(submit_button, 'click', function () {
+  
                 path_temp = route_setup();
                 console.log(path_temp);
                 for (var i = 0; i < path_temp.length; ++i) {
@@ -512,6 +516,7 @@ title: "Hello World!",
                      line = Path.getPath();
                     line.push(latLng_temp);
                 }
+                path_temp = [];
             });
             // console(line.getPath());
         }
