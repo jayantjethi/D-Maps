@@ -19,7 +19,7 @@
    /* position: absolute;*/
     /*z-index: 0;*/
      margin: 0;
-  position: absolute;
+ /* position: absolute;*/
   top: 50%;
   /* -ms-transform: translateY(-50%);
   transform: translateY(-50%); */
@@ -101,8 +101,8 @@
     
 }
 #to{
-    margin-left: 260px;
-    margin-right: 260px;
+   /* margin-left: 260px;
+    margin-right: 260px;*/
 }
 #Places{
     height: 50px;
