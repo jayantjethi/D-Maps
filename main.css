@@ -1,7 +1,7 @@
 #map{
     height: 700px;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 150px;
 }
 #getRoute{
     width: 150px;
@@ -19,13 +19,13 @@
    /* position: absolute;*/
     /*z-index: 0;*/
      margin: 0;
- /* position: absolute;*/
-  top: 50%;
+ position: absolute;
+  /* top: 50%; */
   /* -ms-transform: translateY(-50%);
   transform: translateY(-50%); */
     border-radius: 18px;
     top: 100px;
-    left: 440px;
+    left: 620px;
     font-family: Quicksand;
     font-size: large;
     font-weight: 700;
@@ -33,10 +33,12 @@
     margin-bottom: 10px;
     box-shadow: 0 4px rgb(12, 12, 12);
 }
-#getRoute:hover {background-color : burlywood}
+#getRoute:hover {background-color : #b3d9ff;
+cursor : pointer;
+}
 
 #getRoute:active {
-    background-color : burlywood;
+    background-color : #b3d9ff;
   box-shadow: 0 5px rgb(20, 20, 20);
   transform: translateY(3px);
 }
@@ -59,8 +61,8 @@
      font-size: large;
   position: absolute;
     border-radius: 18px;
-    top: 110px;
-    left: 1200px;
+    top: 160px;
+    left: 620px;
     font-family: Quicksand;
     box-shadow: 0 4px rgb(12, 12, 12);
     /* font-size: large; */
@@ -68,10 +70,10 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#getRoute1:hover {background-color : burlywood}
+#getRoute1:hover {background-color : #b3d9ff}
 
 #getRoute1:active {
-    background-color : burlywood;
+    background-color : #b3d9ff;
   box-shadow: 0 5px rgb(20, 20, 20);
   transform: translateY(3px);
 }
@@ -103,6 +105,42 @@
 #to{
    /* margin-left: 260px;
     margin-right: 260px;*/
+}
+#getRoute1 :after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.2s;
+}
+
+#getRoute1:hover {
+  padding-right: 25px;
+  cursor: pointer;
+}
+
+#getRoute1:hover :after {
+  opacity: 1;
+  right: 0;
+}
+#getRoute :after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.2s;
+}
+
+#getRoute:hover {
+  padding-right: 25px;
+  cursor: pointer;
+}
+
+#getRoute:hover :after {
+  opacity: 1;
+  right: 0;
 }
 #Places{
     height: 50px;
