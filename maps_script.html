@@ -23,9 +23,10 @@
 </head>
 
 <body>
-    <div id="uppr">
-        <label for="From" >From:</label>
-        <select name="Places" id="Places">
+    <div id="uppr" class="container" class="row">
+      <div    class=" col-md-6 ">
+        <label for="From" >From:
+        <select name="Places" id="Places" class="elemnum">
             <option value="" disabled selected hidden>Enter Your Current Location...</option>
           <option value="0">TnP</option>
           <option value="1">OAT</option>
@@ -50,13 +51,15 @@
           <option value="21">CS Department</option>
           <option value="22">EE Department</option>
           <option value="23">Civil Department</option>
-        </div>
         </select>
+        </label>
+      </div>
+        <div    class="col-md-6">
         <span id="to">
-         <label for="To" >To</label>
-        <select name="Places" id="Places1">
+         <label for="To" >To
+        <select name="Places" id="Places1" class="elemnum">
         <option value="" disabled selected hidden>Enter Your Destination...</option>
-         <option value="0">TnP</option>
+           <option value="0">TnP</option>
           <option value="1">OAT</option>
           <option value="2">BR Audi</option>
           <option value="3">Mic Mac</option>
@@ -80,15 +83,18 @@
           <option value="22">EE Department</option>
           <option value="23">Civil Department</option>
         </select>
+        </label>
     </span>
+    </div>
          <br>
           <br>
       <a href="#map"><input id = "getRoute" type="submit" value="Submit" ></a>
-      <button onclick="window.location.reload()" id="getRoute1">Clear</button>
+     
     </div>
+</div>
 
 
-
+   <button onclick="window.location.reload()" id="getRoute1">Clear</button>
     <div id="map"></div>
     <br>
      <h1 id="dist"><i class="fa fa-map-marker" aria-hidden="true"></i> Distance =>  <span id="distance"></span></h1>
@@ -282,62 +288,62 @@
     position: tnp,
     icon: svgMarker,
 map,
-title: "Hello World!",
+title: "TNP",
 });
 new google.maps.Marker({
     position: oat,
     icon: svgMarker,
 map,
-title: "Hello World!",
+title: "OAT",
 });
 new google.maps.Marker({
     position: braudi,
     icon: svgMarker,
 
 map,
-title: "Hello World!",
+title: "BR AUDI",
 });
 new google.maps.Marker({
     position: micmac,
     icon: svgMarker,
 
 map,
-title: "Hello World!",
+title: "MIC-MAC",
 });
 new google.maps.Marker({
     position: library,
     icon: svgMarker,
 
 map,
-title: "Hello World!",
+title: "LIBRARY",
 });
 new google.maps.Marker({
     position: academicsection,
     icon: svgMarker,
 
 map,
-title: "Hello World!",
+title: "ACADEMIC-SECTION",
 });
 new google.maps.Marker({
     position: administartionblock,
     icon: svgMarker5,
 
 map,
-title: "Hello World!",
+title: "ADMINISTARTION-BLOCK",
 });
 new google.maps.Marker({
     position: nescafe,
     icon: svgMarker,
 
 map,
-title: "Hello World!",
+title: "NESCAFE",
 });
 new google.maps.Marker({
     position: computercenter,
     icon: svgMarker,
 
 map,
-title: "Hello World!",
+title: "COMPUTER CENTER",
 });
 
 new google.maps.Marker({
@@ -345,97 +351,97 @@ new google.maps.Marker({
     icon: svgMarker4,
 
 map,
-title: "Hello World!",
+title: "SPS 1-8",
 });
 new google.maps.Marker({
     position: appliedchem,
     icon: svgMarker7,
 
 map,
-title: "Hello World!",
+title: "APPLIED CHEMISTRY",
 });
 new google.maps.Marker({
     position: mathsdepartmnt,
     icon: svgMarker,
 
 map,
-title: "Hello World!",
+title: "MATHS DEPARTMENT",
 });
 new google.maps.Marker({
     position: centeralwork,
     icon: svgMarker,
 
 map,
-title: "Hello World!",
+title: "CENTRAL WORKSHOP",
 });
 new google.maps.Marker({
     position: departmntofbio,
     icon: svgMarker,
 
 map,
-title: "Hello World!",
+title: "DEPARTMENT OF BIO",
 });
 new google.maps.Marker({
     position: mechanicldepartmnt,
     icon: svgMarker,
 
 map,
-title: "Hello World!",
+title: "MECHANICAL DEPARTMENT",
 });
 new google.maps.Marker({
     position: maxi,
     icon: svgMarker,
     
 map,
-title: "Hello World!",
+title: "MECH-C",
 });
 new google.maps.Marker({
     position: hpmcjuice,
     icon: svgMarker,
 
 map,
-title: "Hello World!",
+title: "HPMC-JUICE",
 });
 new google.maps.Marker({
     position: sps912,
     icon: svgMarker2,
 
 map,
-title: "Hello World!",
+title: "SPS 9-12",
 });
 new google.maps.Marker({
     position: type4faculty,
     icon: svgMarker3,
 
 map,
-title: "Hello World!",
+title: "TYPE-4 FACULTY",
 });
 new google.maps.Marker({
     position: horiculturedepartmnt,
     icon: svgMarker,
     map,
-title: "Hello World!",
+title: "HORICULTURE DEPARTMENT",
 });
 new google.maps.Marker({
     position: csdepartmnt,
     icon: svgMarker6,
 
 map,
-title: "Hello!",
+title: "CS-DEPARTMENT",
 });
 new google.maps.Marker({
     position: eedepartmnt,
     icon: svgMarker,
 
 map,
-title: "Hello World!",
+title: "EE-DEPARTMENT",
 });
 new google.maps.Marker({
     position: civildepartmnt,
     icon: svgMarker,
     
 map,
-title: "Hello World!",
+title: "CIVIL-DEPARTMENT",
 });
 
             map.data.loadGeoJson(data);
@@ -493,30 +499,43 @@ title: "Hello World!",
                     }
                 }
             });
-            /*---------------------------------------------------------------------------------------------*/
 
-            Path = new google.maps.Polyline({
-                geodesic: true,
-                strokeColor: 'blue',
-                strokeOpacity: 1.0,
-                strokeWeight: 2
-            });
-            Path.setMap(map);
+            /*---------------------------------------------------------------------------------------------*/
+          // var temp=route_setup();
+          // console.log(temp);
+
+            
              var line;
             // This section is related to the routing from entry to exit
 
             var submit_button = document.getElementById('getRoute');
 
             google.maps.event.addDomListener(submit_button, 'click', function () {
-  
+                Path = new google.maps.Polyline({
+                geodesic: true,
+                strokeColor: 'blue',
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+           
+              Path.setMap(map);
+              var line2=Path.getPath();
+              console.log(Path);
                 path_temp = route_setup();
-                console.log(path_temp);
+              //  console.log(path_temp);
+
+
                 for (var i = 0; i < path_temp.length; ++i) {
                     var latLng_temp = new google.maps.LatLng(path_temp[i].lat, path_temp[i].lng);
                      line = Path.getPath();
                     line.push(latLng_temp);
                 }
-                path_temp = [];
+               
+                console.log(line);
+                
+                 document.getElementById("Places1").selectedIndex = 0;
+                  document.getElementById("Places").selectedIndex = 0;
+                console.log(line);
             });
             // console(line.getPath());
         }
